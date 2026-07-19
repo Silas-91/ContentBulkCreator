@@ -16,7 +16,7 @@ const requiredFiles = [
   "assets/export-toolbar.png",
   "assets/row-nav.png",
   "assets/crop-preview.png",
-  "assets/support-header.png",
+  "assets/content-bulk-creator-logo.svg",
   "styles.css",
   "homepage.js",
   "package.json",
@@ -70,6 +70,14 @@ const localRefs = [...html.matchAll(/(?:src|href)="\.\/([^"#]+)"/g)].map((match)
 for (const ref of localRefs) {
   if (!fs.existsSync(path.join(root, ref))) {
     failures.push(`Lokale Referenz zeigt ins Leere: ${ref}`);
+  }
+}
+
+const referencedAssets = new Set(localRefs.filter((ref) => ref.startsWith("assets/")));
+const assetFiles = fs.readdirSync(path.join(root, "assets")).map((file) => `assets/${file}`);
+for (const asset of assetFiles) {
+  if (!referencedAssets.has(asset)) {
+    failures.push(`Ungenutzte Homepage-Datei gefunden: ${asset}`);
   }
 }
 
