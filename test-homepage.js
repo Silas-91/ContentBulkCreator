@@ -8,14 +8,13 @@ const jsPath = path.join(root, "homepage.js");
 const html = fs.readFileSync(htmlPath, "utf8");
 
 const requiredFiles = [
-  "assets/hero-app.png",
-  "assets/workflow-empty.png",
-  "assets/media-editor.png",
-  "assets/music-editor.png",
-  "assets/bulk-data.png",
-  "assets/export-toolbar.png",
-  "assets/row-nav.png",
-  "assets/crop-preview.png",
+  "assets/editor-overview.png",
+  "assets/editor-start.png",
+  "assets/import-bulk-data.png",
+  "assets/image-editing.png",
+  "assets/music-editing.png",
+  "assets/export-resolution.png",
+  "assets/export-quality.png",
   "assets/content-bulk-creator-logo.svg",
   "styles.css",
   "homepage.js",
@@ -28,16 +27,16 @@ const requiredText = [
   "Content Bulk Creator",
   "Content in Serie",
   "Vorlage",
-  "Bulk Daten",
+  "Bulk-Daten",
   "Musik",
-  "Editor-Bereiche",
+  "Einmal gestalten. Als ganze Reihe exportieren.",
   "Impressum",
   "data-modal-open=\"imprint-modal\"",
-  "data-preview-src=\"./assets/crop-preview.png\"",
+  "data-preview-src=\"./assets/editor-overview.png\"",
   "Max Mustermann &amp; Co.",
   "Buy Me a Coffee",
   "https://www.buymeacoffee.com/silassmithi",
-  "href=\"#funktionen\"",
+  "href=\"#workflow\"",
 ];
 
 const failures = [];
@@ -89,7 +88,7 @@ if (!fs.existsSync(cssPath)) {
   failures.push("styles.css fehlt");
 } else {
   const css = fs.readFileSync(cssPath, "utf8");
-  for (const token of ["--purple", "--pink", ".hero", ".feature-grid", ".showcase-grid"]) {
+  for (const token of ["--purple", "--pink", ".hero", ".story-grid", ".export-grid"]) {
     if (!css.includes(token)) {
       failures.push(`CSS-Merkmal fehlt: ${token}`);
     }
