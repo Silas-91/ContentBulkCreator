@@ -1,0 +1,39 @@
+name: Homepage CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: homepage-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Homepage pruefen
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v4
+
+      - name: Node.js einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Abhaengigkeiten reproduzierbar installieren
+        run: npm ci
+
+      - name: Homepage, JavaScript und HTML pruefen
+        run: npm test
+
+      - name: Abhaengigkeiten auf bekannte Schwachstellen pruefen
+        run: npm audit --audit-level=high

@@ -1,0 +1,17 @@
+{
+  "name": "content-bulk-creator-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "npm run test:homepage && npm run test:javascript && npm run test:html",
+    "test:homepage": "node test-homepage.js",
+    "test:javascript": "node --check homepage.js",
+    "test:html": "html-validate index.html"
+  },
+  "devDependencies": {
+    "html-validate": "10.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
