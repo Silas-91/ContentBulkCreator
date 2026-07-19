@@ -56,25 +56,25 @@ p {
 }
 
 h1 {
-  max-width: 780px;
-  margin-bottom: 24px;
-  font-size: clamp(48px, 7vw, 92px);
-  line-height: 0.96;
-  letter-spacing: -0.055em;
-}
-
-h2 {
-  margin-bottom: 18px;
-  font-size: clamp(34px, 4.5vw, 60px);
+  max-width: 650px;
+  margin-bottom: 20px;
+  font-size: clamp(40px, 5vw, 64px);
   line-height: 1.02;
   letter-spacing: -0.04em;
 }
 
-h3 {
+h2 {
   margin-bottom: 14px;
-  font-size: clamp(26px, 3vw, 40px);
+  font-size: clamp(30px, 3.5vw, 44px);
   line-height: 1.08;
   letter-spacing: -0.03em;
+}
+
+h3 {
+  margin-bottom: 12px;
+  font-size: clamp(23px, 2.5vw, 30px);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
 }
 
 .site-header {
@@ -143,13 +143,13 @@ h3 {
 }
 
 .hero {
-  width: min(1480px, calc(100% - 44px));
-  min-height: 730px;
+  width: min(1160px, calc(100% - 44px));
+  min-height: 580px;
   margin: 0 auto;
-  padding: 88px 0 64px;
+  padding: 62px 0 48px;
   display: grid;
-  grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1.18fr);
-  gap: clamp(34px, 5vw, 80px);
+  grid-template-columns: minmax(0, 0.9fr) minmax(460px, 1.1fr);
+  gap: clamp(30px, 4vw, 58px);
   align-items: center;
 }
 
@@ -173,7 +173,7 @@ h3 {
 .music-copy > p,
 .cta-section p {
   color: #d1cede;
-  font-size: clamp(17px, 1.4vw, 20px);
+  font-size: clamp(16px, 1.2vw, 18px);
 }
 
 .hero-lead {
@@ -200,25 +200,6 @@ h3 {
   box-shadow: 0 18px 38px rgba(236, 72, 153, 0.24);
 }
 
-.hero-points {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 32px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.hero-points li {
-  padding: 7px 11px;
-  border: 1px solid rgba(139, 92, 246, 0.34);
-  border-radius: 999px;
-  background: rgba(139, 92, 246, 0.08);
-  color: #d5c5ee;
-  font-size: 13px;
-  font-weight: 750;
-}
-
 .hero-visual {
   position: relative;
   display: block;
@@ -226,9 +207,9 @@ h3 {
   padding: 0;
   overflow: hidden;
   border: 1px solid rgba(167, 139, 250, 0.45);
-  border-radius: 18px;
+  border-radius: 14px;
   background: #080910;
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.52), 0 0 70px rgba(139, 92, 246, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
   cursor: zoom-in;
   transform: perspective(1400px) rotateY(-3deg);
 }
@@ -245,8 +226,8 @@ h3 {
 
 .hero-visual img {
   width: 100%;
-  aspect-ratio: 1.6 / 1;
-  object-fit: cover;
+  aspect-ratio: 1.62 / 1;
+  object-fit: contain;
   object-position: center top;
 }
 
@@ -268,7 +249,7 @@ h3 {
 .section,
 .use-cases,
 .cta-section {
-  width: min(1220px, calc(100% - 40px));
+  width: min(1120px, calc(100% - 40px));
   margin-inline: auto;
 }
 
@@ -282,7 +263,7 @@ h3 {
   display: flex;
   gap: 14px;
   align-items: center;
-  padding: 22px;
+  padding: 16px 18px;
 }
 
 .trust-strip article + article {
@@ -306,12 +287,12 @@ h3 {
 }
 
 .section {
-  padding-top: 110px;
+  padding-top: 76px;
 }
 
 .section-heading {
-  max-width: 860px;
-  margin-bottom: 38px;
+  max-width: 760px;
+  margin-bottom: 28px;
 }
 
 .compact-heading {
@@ -319,10 +300,12 @@ h3 {
 }
 
 .wide-showcase {
+  max-width: 980px;
+  margin-inline: auto;
   overflow: hidden;
   margin: 0;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 14px;
   background: rgba(18, 19, 32, 0.92);
   box-shadow: var(--shadow);
 }
@@ -343,8 +326,8 @@ h3 {
 
 .wide-showcase img {
   width: 100%;
-  max-height: 670px;
-  object-fit: cover;
+  max-height: 520px;
+  object-fit: contain;
   object-position: center top;
   transition: transform 220ms ease;
 }
@@ -364,7 +347,7 @@ h3 {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 18px;
-  padding: 24px 28px 26px;
+  padding: 18px 22px 20px;
 }
 
 .caption-number {
@@ -386,34 +369,33 @@ figcaption span {
 
 .story-grid {
   display: grid;
-  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
 }
 
 .story-card {
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 14px;
   background: linear-gradient(135deg, rgba(25, 26, 43, 0.96), rgba(15, 16, 28, 0.94));
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
 }
 
 .story-card-wide {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
 }
 
 .story-card-wide.reverse {
-  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1.15fr);
+  display: flex;
 }
 
 .story-card-wide.reverse .story-copy {
-  grid-column: 2;
-  grid-row: 1;
+  order: 0;
 }
 
 .story-copy {
-  padding: clamp(30px, 5vw, 66px);
+  padding: 30px 30px 24px;
   align-self: center;
 }
 
@@ -434,7 +416,7 @@ figcaption span {
 .check-list {
   display: grid;
   gap: 10px;
-  margin: 24px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   color: #ded9e9;
   list-style: none;
@@ -449,23 +431,25 @@ figcaption span {
 
 .product-shot {
   width: 100%;
-  min-height: 540px;
+  height: 390px;
+  min-height: 0;
   padding: 0;
-  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  border-left: 0;
   background: #090a13;
 }
 
 .reverse .product-shot {
-  grid-column: 1;
-  grid-row: 1;
-  border-right: 1px solid var(--line);
+  order: 1;
+  border-top: 1px solid var(--line);
+  border-right: 0;
   border-left: 0;
 }
 
 .product-shot img {
   width: 100%;
   height: 100%;
-  max-height: 720px;
+  max-height: 390px;
   object-fit: contain;
   object-position: center top;
   transition: transform 220ms ease;
@@ -473,8 +457,8 @@ figcaption span {
 
 .music-section {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-  gap: clamp(30px, 6vw, 86px);
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
+  gap: clamp(30px, 5vw, 64px);
   align-items: center;
 }
 
@@ -483,19 +467,19 @@ figcaption span {
 }
 
 .music-shot {
-  width: min(100%, 470px);
+  width: min(100%, 330px);
   justify-self: end;
   padding: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 18px;
+  border-radius: 14px;
   background: #0b0c16;
   box-shadow: var(--shadow);
 }
 
 .music-shot img {
   width: 100%;
-  max-height: 720px;
+  max-height: 600px;
   object-fit: contain;
   transition: transform 220ms ease;
 }
@@ -508,7 +492,7 @@ figcaption span {
 }
 
 .metric-grid div {
-  padding: 18px;
+  padding: 15px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.025);
@@ -543,7 +527,7 @@ figcaption span {
 .export-grid .preview-trigger {
   display: grid;
   width: 100%;
-  min-height: 250px;
+  min-height: 190px;
   padding: 0;
   place-items: center;
   border-bottom: 1px solid var(--line);
@@ -556,7 +540,7 @@ figcaption span {
 }
 
 .export-grid figcaption {
-  padding: 20px 22px 22px;
+  padding: 16px 18px 18px;
 }
 
 .use-cases {
@@ -564,8 +548,8 @@ figcaption span {
   grid-template-columns: 0.85fr 1.15fr;
   gap: 34px;
   align-items: center;
-  margin-top: 110px;
-  padding: clamp(28px, 5vw, 54px);
+  margin-top: 76px;
+  padding: 30px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.12), rgba(236, 72, 153, 0.07));
@@ -593,8 +577,8 @@ figcaption span {
   gap: 34px;
   align-items: center;
   margin-top: 28px;
-  margin-bottom: 100px;
-  padding: clamp(28px, 5vw, 54px);
+  margin-bottom: 70px;
+  padding: 30px;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: rgba(18, 19, 32, 0.9);
@@ -738,22 +722,14 @@ figcaption span {
     grid-template-columns: 1fr;
   }
 
-  .story-card-wide.reverse .story-copy,
-  .story-card-wide.reverse .product-shot {
-    grid-column: 1;
-  }
-
-  .story-card-wide.reverse .story-copy {
-    grid-row: 1;
-  }
-
-  .story-card-wide.reverse .product-shot {
-    grid-row: 2;
+  .story-grid {
+    grid-template-columns: 1fr;
   }
 
   .product-shot,
   .reverse .product-shot {
-    min-height: 420px;
+    height: 390px;
+    min-height: 0;
     border: 0;
     border-top: 1px solid var(--line);
   }
@@ -795,7 +771,7 @@ figcaption span {
   }
 
   h1 {
-    font-size: clamp(42px, 14vw, 64px);
+    font-size: clamp(38px, 12vw, 52px);
   }
 
   .hero-actions {
@@ -827,7 +803,7 @@ figcaption span {
   }
 
   .section {
-    padding-top: 78px;
+    padding-top: 62px;
   }
 
   .story-copy {
@@ -839,7 +815,7 @@ figcaption span {
   }
 
   .product-shot {
-    min-height: 360px;
+    height: 350px;
   }
 
   .metric-grid {
