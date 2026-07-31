@@ -20,6 +20,7 @@ const requiredFiles = [
   "homepage.js",
   "package.json",
   "package-lock.json",
+  "README.md",
   ".github/workflows/ci.yml",
 ];
 
@@ -29,12 +30,13 @@ const requiredText = [
   "Vorlage",
   "Bulk-Daten",
   "Musik",
-  "Einmal gestalten. Als ganze Reihe exportieren.",
+  "Eine Idee.",
+  "Eine klare Produktionsstrecke",
   "Impressum",
   "data-modal-open=\"imprint-modal\"",
   "data-preview-src=\"./assets/editor-overview.png\"",
   "Max Mustermann &amp; Co.",
-  "Buy Me a Coffee",
+  "Projekt unterstützen",
   "https://www.buymeacoffee.com/silassmithi",
   "href=\"#workflow\"",
 ];
@@ -88,7 +90,7 @@ if (!fs.existsSync(cssPath)) {
   failures.push("styles.css fehlt");
 } else {
   const css = fs.readFileSync(cssPath, "utf8");
-  for (const token of ["--purple", "--pink", ".hero", ".story-grid", ".export-grid"]) {
+  for (const token of ["--violet", "--magenta", ".hero", ".production-track", ".feature-grid", ".export-section"]) {
     if (!css.includes(token)) {
       failures.push(`CSS-Merkmal fehlt: ${token}`);
     }

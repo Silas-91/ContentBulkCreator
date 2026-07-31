@@ -15,258 +15,191 @@
   <body id="top">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Zum Seitenanfang">
-        <img class="brand-logo" src="./assets/content-bulk-creator-logo.svg" width="40" height="40" alt="Content Bulk Creator Logo">
+        <img src="./assets/content-bulk-creator-logo.svg" width="38" height="38" alt="">
         <strong>Content Bulk Creator</strong>
       </a>
-      <nav class="nav-links" aria-label="Hauptnavigation">
+      <nav aria-label="Hauptnavigation">
         <a href="#workflow">Workflow</a>
-        <a href="#werkzeuge">Werkzeuge</a>
+        <a href="#funktionen">Funktionen</a>
         <a href="#export">Export</a>
       </nav>
-      <a class="coffee-link" href="https://www.buymeacoffee.com/silassmithi" target="_blank" rel="noreferrer">
-        <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me a Coffee">
+      <a class="support-link" href="https://www.buymeacoffee.com/silassmithi" target="_blank" rel="noreferrer">
+        Projekt unterstützen <span aria-hidden="true">↗</span>
       </a>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Ein Studio für Content in Serie</p>
-          <h1 id="hero-title">Einmal gestalten. Als ganze Reihe exportieren.</h1>
+          <p class="eyebrow">Das Produktionsstudio für Content-Serien</p>
+          <h1 id="hero-title">Eine Idee.<br><em>Viele fertige Posts.</em></h1>
           <p class="hero-lead">
-            Content Bulk Creator führt Vorlage, CSV-Daten, Bildbearbeitung, Musik und Export in einem
-            fokussierten Workflow zusammen. So entstehen aus einer Idee viele konsistente Varianten.
+            Erstelle eine Vorlage, verbinde deine Inhalte und exportiere konsistente Bild- oder Video-Reihen – in einem durchgängigen Workflow.
           </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="#workflow">Workflow entdecken</a>
-            <a class="secondary-action" href="#werkzeuge">Werkzeuge ansehen</a>
-          </div>
+          <a class="primary-action" href="#workflow">So funktioniert es <span aria-hidden="true">↓</span></a>
         </div>
-        <button
-          class="hero-visual preview-trigger"
-          type="button"
-          data-preview-src="./assets/editor-overview.png"
-          data-preview-title="Der Content Bulk Creator im Einsatz"
-        >
-          <img
-            src="./assets/editor-overview.png"
-            alt="Content Bulk Creator mit geladener Bildvorlage, Zuschnitt und zentralem Editor"
+        <div class="hero-stage">
+          <div class="stage-label"><span></span> Live-Arbeitsfläche</div>
+          <button
+            class="preview-trigger hero-shot"
+            type="button"
+            data-preview-src="./assets/editor-overview.png"
+            data-preview-title="Der Content Bulk Creator im Einsatz"
           >
-          <span>Vollansicht öffnen</span>
-        </button>
-      </section>
-
-      <section class="trust-strip" aria-label="Arbeitsprinzip">
-        <article>
-          <span>01</span>
-          <div><strong>Vorlage laden</strong><small>Bild, Video oder GIF</small></div>
-        </article>
-        <article>
-          <span>02</span>
-          <div><strong>Daten verbinden</strong><small>CSV oder manuelles Grid</small></div>
-        </article>
-        <article>
-          <span>03</span>
-          <div><strong>Varianten veredeln</strong><small>Bild, Text und Musik</small></div>
-        </article>
-        <article>
-          <span>04</span>
-          <div><strong>Gezielt exportieren</strong><small>Reihen, Größe und Qualität</small></div>
-        </article>
-      </section>
-
-      <section id="workflow" class="section workflow-intro">
-        <div class="section-heading">
-          <p class="eyebrow">Vom leeren Canvas zur fertigen Serie</p>
-          <h2>Der Workflow zeigt immer nur, was als Nächstes zählt.</h2>
-          <p>
-            Links liegen Vorlage, Bulk-Daten und Musik. In der Mitte entsteht das Motiv. Rechts werden
-            Eigenschaften präzise angepasst. Die klare Aufteilung hält auch große Content-Reihen übersichtlich.
-          </p>
+            <img src="./assets/editor-overview.png" alt="Content Bulk Creator mit geladener Bildvorlage und zentralem Editor">
+          </button>
+          <p class="stage-note">Vorlage, Daten und Ausgabe bleiben sichtbar in einem Arbeitsbereich.</p>
         </div>
-        <figure class="wide-showcase">
+      </section>
+
+      <section id="workflow" class="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <p class="eyebrow">Eine klare Produktionsstrecke</p>
+          <h2 id="workflow-title">Von der Vorlage zur ganzen Reihe.</h2>
+          <p>Vier Schritte, die in derselben Oberfläche bleiben. Kein Springen zwischen Einzelwerkzeugen.</p>
+        </div>
+        <ol class="production-track">
+          <li>
+            <span class="step-number">01</span>
+            <strong>Vorlage</strong>
+            <small>Bild, Video oder GIF laden</small>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <strong>Bulk-Daten</strong>
+            <small>CSV oder Grid verbinden</small>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <strong>Gestalten</strong>
+            <small>Bild, Text und Musik abstimmen</small>
+          </li>
+          <li>
+            <span class="step-number">04</span>
+            <strong>Exportieren</strong>
+            <small>Reihe und Qualität festlegen</small>
+          </li>
+        </ol>
+        <figure class="workspace-preview">
           <button
             class="preview-trigger"
             type="button"
             data-preview-src="./assets/editor-start.png"
             data-preview-title="Der aufgeräumte Startzustand"
           >
-            <img
-              src="./assets/editor-start.png"
-              alt="Leerer Content Bulk Creator mit Uploadbereich und zentraler Vorschau"
-            >
+            <img src="./assets/editor-start.png" alt="Leerer Editor mit Uploadbereich und zentraler Vorschau">
           </button>
           <figcaption>
-            <span class="caption-number">01</span>
-            <div>
-              <strong>Klar starten, ohne leere Komplexität.</strong>
-              <p>Der Editor führt zuerst zur Vorlage. Bulk-Daten und Musik werden genau dann aktiv, wenn sie gebraucht werden.</p>
-            </div>
+            <strong>Der Editor zeigt nur, was gerade gebraucht wird.</strong>
+            <span>Die nächsten Bereiche werden aktiv, sobald eine Vorlage geladen ist.</span>
           </figcaption>
         </figure>
       </section>
 
-      <section id="werkzeuge" class="section">
-        <div class="section-heading compact-heading">
-          <p class="eyebrow">Werkzeuge mit echtem Produktionsfluss</p>
-          <h2>Importieren, gestalten und abstimmen – ohne den Kontext zu wechseln.</h2>
+      <section id="funktionen" class="features" aria-labelledby="features-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Werkzeuge im Zusammenhang</p>
+            <h2 id="features-title">Mehr Kontrolle.<br>Weniger Umwege.</h2>
+          </div>
+          <p>Jedes Werkzeug sitzt dort, wo es im Produktionsfluss gebraucht wird – ohne den Blick auf das Ergebnis zu verlieren.</p>
         </div>
 
-        <div class="story-grid">
-          <article class="story-card story-card-wide">
-            <div class="story-copy">
-              <span class="story-kicker">Bulk-Daten</span>
-              <h3>Eine Vorlage, viele Inhalte.</h3>
-              <p>
-                CSV-Dateien lassen sich direkt hochladen. Alternativ entsteht die Datenreihe manuell im Grid.
-                Jede Zeile liefert die Werte für eine eigene Variante – ideal für Hooks, Zitate, Angebote,
-                Namen oder wiederkehrende Kampagnenmotive.
-              </p>
-              <ul class="check-list">
+        <div class="feature-grid">
+          <article class="feature-card bulk-card">
+            <div class="card-copy">
+              <span class="feature-label">Daten</span>
+              <h3>Eine Vorlage wird zur Serie.</h3>
+              <p>CSV hochladen oder Inhalte direkt im Grid pflegen. Jede Zeile erzeugt eine eigene Variante.</p>
+              <ul>
                 <li>CSV mit Komma oder Semikolon</li>
-                <li>Upload und manuelle Pflege</li>
-                <li>Felder als freie Textelemente</li>
+                <li>Manuelle Bearbeitung im Grid</li>
+                <li>Ideal für Hooks, Namen und Angebote</li>
               </ul>
             </div>
             <button
-              class="product-shot portrait-shot preview-trigger"
+              class="preview-trigger vertical-shot"
               type="button"
               data-preview-src="./assets/import-bulk-data.png"
-              data-preview-title="Vorlage und Bulk-Daten importieren"
+              data-preview-title="Bulk-Daten importieren"
             >
-              <img
-                src="./assets/import-bulk-data.png"
-                alt="Seitenleiste mit geladener Vorlage und CSV-Upload für Bulk-Daten"
-              >
+              <img src="./assets/import-bulk-data.png" alt="Vorlage und CSV-Upload für Bulk-Daten">
             </button>
           </article>
 
-          <article class="story-card story-card-wide reverse">
-            <div class="story-copy">
-              <span class="story-kicker">Bildbearbeitung</span>
-              <h3>Der richtige Ausschnitt für jede Variante.</h3>
-              <p>
-                Drehen, spiegeln, zuschneiden und den Farblook abstimmen: Die wichtigsten Korrekturen sitzen
-                direkt neben der Vorschau. Helligkeit, Kontrast und Sättigung bleiben dadurch Teil desselben
-                Produktionsschritts.
-              </p>
-              <ul class="check-list">
-                <li>Interaktiver Bildzuschnitt</li>
-                <li>Transformation und Farblooks</li>
-                <li>Feinregler direkt im Editor</li>
-              </ul>
+          <article class="feature-card edit-card">
+            <div class="card-copy">
+              <span class="feature-label">Bild</span>
+              <h3>Feinschliff direkt am Motiv.</h3>
+              <p>Zuschneiden, drehen, spiegeln und den Farblook anpassen – immer neben der Vorschau.</p>
             </div>
             <button
-              class="product-shot portrait-shot preview-trigger"
+              class="preview-trigger vertical-shot"
               type="button"
               data-preview-src="./assets/image-editing.png"
-              data-preview-title="Bildbearbeitung im Eigenschaftenbereich"
+              data-preview-title="Bildbearbeitung"
             >
-              <img
-                src="./assets/image-editing.png"
-                alt="Eigenschaftenbereich für Zuschnitt, Spiegelung und Farbkorrektur"
-              >
+              <img src="./assets/image-editing.png" alt="Bildbearbeitung für Zuschnitt, Spiegelung und Farbkorrektur">
+            </button>
+          </article>
+
+          <article class="feature-card audio-card">
+            <div class="card-copy">
+              <span class="feature-label">Audio</span>
+              <h3>Musik passend zur Länge setzen.</h3>
+              <p>Track vorhören, Lautstärke regeln und Start sowie Ende präzise bestimmen.</p>
+            </div>
+            <button
+              class="preview-trigger vertical-shot"
+              type="button"
+              data-preview-src="./assets/music-editing.png"
+              data-preview-title="Musik bearbeiten"
+            >
+              <img src="./assets/music-editing.png" alt="Musikbereich mit Wiedergabe, Lautstärke sowie Start und Ende">
             </button>
           </article>
         </div>
       </section>
 
-      <section class="section music-section">
-        <div class="music-copy">
-          <p class="eyebrow">Audio, das zur Reihe passt</p>
-          <h2>Musik präzise setzen, statt nur anzuhängen.</h2>
-          <p>
-            Track laden, vorhören und den verwendeten Bereich bestimmen. Lautstärke sowie Start und Ende
-            lassen sich sichtbar kontrollieren – damit Bildfolge und Sound als ein Format exportiert werden.
-          </p>
-          <div class="metric-grid">
-            <div><strong>Start &amp; Ende</strong><span>Track-Ausschnitt gezielt festlegen</span></div>
-            <div><strong>Lautstärke</strong><span>Direkt pro Produktion abstimmen</span></div>
+      <section id="export" class="export-section" aria-labelledby="export-title">
+        <div class="export-copy">
+          <p class="eyebrow">Ausgabe ohne Rätselraten</p>
+          <h2 id="export-title">Nur exportieren, was du wirklich brauchst.</h2>
+          <p>Wähle einzelne Varianten oder ganze Bereiche. Für Videos bestimmst du Auflösung und Qualität passend zum Zielkanal.</p>
+          <div class="format-list">
+            <span>Einzelne Reihen</span><span>ZIP-Ausgabe</span><span>HD bis 4K</span><span>Drei Qualitätsstufen</span>
           </div>
         </div>
-        <button
-          class="music-shot preview-trigger"
-          type="button"
-          data-preview-src="./assets/music-editing.png"
-          data-preview-title="Musik bearbeiten"
-        >
-          <img
-            src="./assets/music-editing.png"
-            alt="Musikbereich mit Wiedergabe, Lautstärke sowie Start und Ende im Track"
-          >
-        </button>
-      </section>
-
-      <section id="export" class="section export-section">
-        <div class="section-heading">
-          <p class="eyebrow">Ausgabe mit Kontrolle</p>
-          <h2>Exportiere genau die Reihe, Größe und Qualität, die du brauchst.</h2>
-          <p>
-            Einzelne Nummern, Bereiche oder komplette Serien lassen sich als ZIP ausgeben. Für Videos stehen
-            mehrere Auflösungen und Qualitätsstufen bereit – vom schnellen Entwurf bis zur hochauflösenden Ausgabe.
-          </p>
-        </div>
-        <div class="export-grid">
+        <div class="export-shots">
           <figure>
-            <button
-              class="preview-trigger"
-              type="button"
-              data-preview-src="./assets/export-resolution.png"
-              data-preview-title="Flexible Exportauflösung"
-            >
-              <img
-                src="./assets/export-resolution.png"
-                alt="Auswahl für Original, 4K, Full HD und HD beim Videoexport"
-              >
+            <button class="preview-trigger" type="button" data-preview-src="./assets/export-resolution.png" data-preview-title="Flexible Exportauflösung">
+              <img src="./assets/export-resolution.png" alt="Auswahl von HD bis 4K beim Videoexport">
             </button>
-            <figcaption><strong>Auflösung passend zum Kanal.</strong><span>Original, 4K, Full HD oder HD stehen direkt im Export bereit.</span></figcaption>
+            <figcaption><strong>Die richtige Größe</strong><span>Original, 4K, Full HD oder HD</span></figcaption>
           </figure>
           <figure>
-            <button
-              class="preview-trigger"
-              type="button"
-              data-preview-src="./assets/export-quality.png"
-              data-preview-title="Flexible Exportqualität"
-            >
-              <img
-                src="./assets/export-quality.png"
-                alt="Auswahl der Qualitätsstufen Klein, Ausgewogen und Hoch beim Videoexport"
-              >
+            <button class="preview-trigger" type="button" data-preview-src="./assets/export-quality.png" data-preview-title="Flexible Exportqualität">
+              <img src="./assets/export-quality.png" alt="Qualitätsstufen für den Videoexport">
             </button>
-            <figcaption><strong>Qualität bewusst wählen.</strong><span>Klein, ausgewogen oder hoch – je nach Tempo, Dateigröße und Einsatzzweck.</span></figcaption>
+            <figcaption><strong>Die richtige Balance</strong><span>Klein, ausgewogen oder hoch</span></figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="use-cases">
-        <div>
-          <p class="eyebrow">Für wiederholbaren Creator-Content</p>
-          <h2>Mehr Varianten aus derselben starken Idee.</h2>
-        </div>
+      <section class="use-cases" aria-labelledby="use-cases-title">
+        <p class="eyebrow">Gemacht für wiederholbaren Content</p>
+        <h2 id="use-cases-title">Eine starke Idee kann viele Formate tragen.</h2>
         <div class="case-list">
-          <span>Reels-Serien</span>
-          <span>Shorts-Cover</span>
-          <span>Zitatgrafiken</span>
-          <span>Hook-Varianten</span>
-          <span>Podcast-Snippets</span>
-          <span>Launch-Kampagnen</span>
-          <span>Carousel-Assets</span>
-          <span>Thumbnail-Reihen</span>
+          <span>Reels-Serien</span><span>Hook-Varianten</span><span>Zitatgrafiken</span><span>Podcast-Snippets</span><span>Carousel-Assets</span><span>Thumbnail-Reihen</span>
         </div>
       </section>
 
-      <section class="cta-section">
+      <section class="support-section">
         <div>
-          <p class="eyebrow">Unabhängig weiterentwickelt</p>
-          <h2>Ein Creator-Projekt für echte Creator-Workflows.</h2>
-          <p>
-            Content Bulk Creator wächst mit dem Feedback aus der Praxis. Mit einem Kaffee unterstützt du
-            neue Funktionen, bessere Exporte und eine noch rundere Bedienung.
-          </p>
+          <p class="eyebrow">Unabhängig entwickelt</p>
+          <h2>Hilf mit, den Workflow weiter zu verbessern.</h2>
         </div>
-        <a class="coffee-card" href="https://www.buymeacoffee.com/silassmithi" target="_blank" rel="noreferrer">
-          <img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me a Coffee">
-        </a>
+        <a class="primary-action" href="https://www.buymeacoffee.com/silassmithi" target="_blank" rel="noreferrer">Projekt unterstützen <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
@@ -288,12 +221,7 @@
         <button class="modal-close" type="button" data-modal-close aria-label="Impressum schließen">×</button>
         <p class="eyebrow">Impressum</p>
         <h2 id="imprint-title">Max Mustermann &amp; Co.</h2>
-        <p>
-          Max Mustermann &amp; Co.<br>
-          Musterstraße 1<br>
-          12345 Musterstadt<br>
-          Deutschland
-        </p>
+        <p>Max Mustermann &amp; Co.<br>Musterstraße 1<br>12345 Musterstadt<br>Deutschland</p>
         <p>E-Mail: kontakt@example.com</p>
       </div>
     </div>
