@@ -23,6 +23,9 @@ const requiredFiles = [
   "assets/export-format.png",
   "assets/export-resolution.png",
   "assets/export-review.png",
+  "assets/help-menu.png",
+  "assets/help-guide.png",
+  "assets/settings.png",
   "assets/content-bulk-creator-logo.svg",
   "styles.css",
   "homepage.js",
@@ -44,6 +47,11 @@ const requiredText = [
   "Clips präzise für die Serie vorbereiten.",
   "Clip trimmen und Video-Zuschnitt übernehmen",
   "Dynamischen Text bearbeiten",
+  "Nachschlagen, einstellen und Rückmeldung geben.",
+  "Schritt für Schritt durch den Workflow.",
+  "Schneller korrigieren.",
+  "Kontakt &amp; Feedback",
+  "Ein privat entwickeltes Hobbyprojekt",
   "Export prüfen",
   "Impressum",
   "data-modal-open=\"imprint-modal\"",
@@ -54,6 +62,7 @@ const requiredText = [
   "href=\"#workflow\"",
   "href=\"#ueberblick\"",
   "href=\"#eigenschaften\"",
+  "href=\"#hilfe\"",
 ];
 
 const failures = [];

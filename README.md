@@ -12,6 +12,7 @@ Die Inhalte beginnen mit einem Überblick und folgen danach dem tatsächlichen P
 4. Musik hochladen und zeitlich abstimmen
 5. Bild-, Video- und Texteigenschaften bearbeiten
 6. Ausgabeformat festlegen und Export prüfen
+7. Anleitung, Einstellungen, Shortcuts und Kontaktmöglichkeiten nutzen
 
 Die Seite besteht aus folgenden Bereichen:
 
@@ -20,8 +21,9 @@ Die Seite besteht aus folgenden Bereichen:
 - ausführliche Kapitel für Vorlage, Bulk-Daten und Musik
 - getrennte Eigenschaften für Bild, Video und dynamische Texte
 - Exportbereich für Format, Reihen, Auflösung, Qualität und abschließende Prüfung
+- Hilfe- und Infobereich mit Anleitung, Einstellungen, Shortcuts sowie Kontakt & Feedback
 - Beispiele für geeignete Content-Formate
-- freiwillige Unterstützung über Buy Me a Coffee
+- Einordnung als privat entwickeltes Hobbyprojekt und freiwillige Unterstützung über Buy Me a Coffee
 - Impressum als Dialog
 
 ## Gestaltungsrichtung
@@ -71,6 +73,9 @@ Es werden ausschließlich Bilder aus `homepage/assets/` verwendet:
 - `export-format.png`: Auswahl des Seitenverhältnisses
 - `export-resolution.png`: Auswahl der Videoauflösung
 - `export-review.png`: abschließende Zusammenfassung vor dem Export
+- `help-menu.png`: zentraler Einstieg in Hilfe, Informationen, Kontakt und Einstellungen
+- `help-guide.png`: thematisch gegliederte Schritt-für-Schritt-Anleitung
+- `settings.png`: Sprache, Darstellung und persönliche Text-Standards
 - `content-bulk-creator-logo.svg`: Logo und Favicon
 
 Ein Klick auf einen Screenshot öffnet eine größere Vorschau. Die Vorschau lässt sich über die Schließen-Schaltfläche, einen Klick auf den Hintergrund oder mit `Escape` schließen.
