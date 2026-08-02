@@ -43,6 +43,7 @@ const requiredText = [
   "Eigenschaften",
   "Clips präzise für die Serie vorbereiten.",
   "Clip trimmen und Video-Zuschnitt übernehmen",
+  "Dynamischen Text bearbeiten",
   "Export prüfen",
   "Impressum",
   "data-modal-open=\"imprint-modal\"",

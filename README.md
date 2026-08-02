@@ -65,7 +65,7 @@ Es werden ausschließlich Bilder aus `homepage/assets/` verwendet:
 - `music-upload.png`: Upload unterstützter Musikformate
 - `music-controls.png`: Wiedergabe, Lautstärke, Track-Ausschnitt und Timeline
 - `image-properties.png`: Transformation, Zuschnitt und Farbkorrektur
-- `text-properties.png`: Datenfeldverknüpfung, Schrift und Textdarstellung
+- `text-properties.png`: Bereich „Text bearbeiten“ mit Datenfeldverknüpfung, Schrift, Formatierung und Textdarstellung
 - `video-controls.png`: Transformation, Wiedergabe, Ton, Loop und Lautstärke
 - `video-properties.png`: Clip-Trimmen, Video-Zuschnitt, Farblook und Weichzeichnen
 - `export-format.png`: Auswahl des Seitenverhältnisses
