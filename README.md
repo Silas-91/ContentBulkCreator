@@ -10,7 +10,7 @@ Die Inhalte beginnen mit einem Überblick und folgen danach dem tatsächlichen P
 2. Vorlage als Bild, Video oder GIF laden
 3. Bulk-Daten per CSV oder manuellem Grid verbinden
 4. Musik hochladen und zeitlich abstimmen
-5. Bild- und Texteigenschaften bearbeiten
+5. Bild-, Video- und Texteigenschaften bearbeiten
 6. Ausgabeformat festlegen und Export prüfen
 
 Die Seite besteht aus folgenden Bereichen:
@@ -18,7 +18,7 @@ Die Seite besteht aus folgenden Bereichen:
 - kompakter Einstieg mit Produktversprechen und Editor-Vorschau
 - Überblick über Login und alle folgenden Arbeitsschritte
 - ausführliche Kapitel für Vorlage, Bulk-Daten und Musik
-- getrennte Eigenschaften für Bild und dynamische Texte
+- getrennte Eigenschaften für Bild, Video und dynamische Texte
 - Exportbereich für Format, Reihen, Auflösung, Qualität und abschließende Prüfung
 - Beispiele für geeignete Content-Formate
 - freiwillige Unterstützung über Buy Me a Coffee
@@ -66,6 +66,8 @@ Es werden ausschließlich Bilder aus `homepage/assets/` verwendet:
 - `music-controls.png`: Wiedergabe, Lautstärke, Track-Ausschnitt und Timeline
 - `image-properties.png`: Transformation, Zuschnitt und Farbkorrektur
 - `text-properties.png`: Datenfeldverknüpfung, Schrift und Textdarstellung
+- `video-controls.png`: Transformation, Wiedergabe, Ton, Loop und Lautstärke
+- `video-properties.png`: Clip-Trimmen, Video-Zuschnitt, Farblook und Weichzeichnen
 - `export-format.png`: Auswahl des Seitenverhältnisses
 - `export-resolution.png`: Auswahl der Videoauflösung
 - `export-review.png`: abschließende Zusammenfassung vor dem Export
