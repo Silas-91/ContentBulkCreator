@@ -4,19 +4,22 @@ Diese statische Homepage stellt den Content Bulk Creator vor. Ihr einziges Ziel 
 
 ## Aufbau der Seite
 
-Die Inhalte folgen dem tatsächlichen Produktionsablauf:
+Die Inhalte beginnen mit einem Überblick und folgen danach dem tatsächlichen Produktionsablauf:
 
-1. Vorlage als Bild, Video oder GIF laden
-2. Bulk-Daten per CSV oder manuellem Grid verbinden
-3. Bild, Text und Musik bearbeiten
-4. gewünschte Reihen, Auflösung und Qualität exportieren
+1. mit dem persönlichen Konto anmelden
+2. Vorlage als Bild, Video oder GIF laden
+3. Bulk-Daten per CSV oder manuellem Grid verbinden
+4. Musik hochladen und zeitlich abstimmen
+5. Bild- und Texteigenschaften bearbeiten
+6. Ausgabeformat festlegen und Export prüfen
 
 Die Seite besteht aus folgenden Bereichen:
 
 - kompakter Einstieg mit Produktversprechen und Editor-Vorschau
-- Produktionsstrecke mit vier nachvollziehbaren Schritten
-- Funktionskarten für Bulk-Daten, Bildbearbeitung und Musik
-- Exportbereich für Reihen, Auflösungen und Qualitätsstufen
+- Überblick über Login und alle folgenden Arbeitsschritte
+- ausführliche Kapitel für Vorlage, Bulk-Daten und Musik
+- getrennte Eigenschaften für Bild und dynamische Texte
+- Exportbereich für Format, Reihen, Auflösung, Qualität und abschließende Prüfung
 - Beispiele für geeignete Content-Formate
 - freiwillige Unterstützung über Buy Me a Coffee
 - Impressum als Dialog
@@ -30,7 +33,7 @@ Die Gestaltung verbindet die klare Ordnung der aktuellen Version mit der weicher
 - gut lesbare Systemschriften ohne externe Schrift-Abhängigkeit
 - kompakte Screenshots statt großflächiger Produktbilder
 - dezente Verläufe und Schatten zur Trennung der Bereiche
-- eine Produktionsspur als charakteristisches Element des Bulk-Workflows
+- eine verlinkte Produktführung als charakteristisches Element des Bulk-Workflows
 - zurückhaltende Animationen, die bei reduzierter Bewegung deaktiviert werden
 
 Die wichtigsten Designwerte sind als CSS-Variablen am Anfang von `styles.css` definiert.
@@ -54,12 +57,18 @@ homepage/
 Es werden ausschließlich Bilder aus `homepage/assets/` verwendet:
 
 - `editor-overview.png`: ausgefüllter Editor im Hero
-- `editor-start.png`: leerer Startzustand und Upload
-- `import-bulk-data.png`: Vorlage und CSV-Import
-- `image-editing.png`: Zuschnitt, Transformation und Farbkorrektur
-- `music-editing.png`: Wiedergabe, Lautstärke und Track-Ausschnitt
+- `login.png`: Anmeldung mit E-Mail-Adresse und Passwort
+- `template-upload.png`: Upload einer Bild-, Video- oder GIF-Vorlage
+- `template-history.png`: geladene Vorlage und Medienverlauf
+- `bulk-upload.png`: CSV-Import
+- `bulk-grid.png`: manuelle Datenpflege und verfügbare Datenfelder
+- `music-upload.png`: Upload unterstützter Musikformate
+- `music-controls.png`: Wiedergabe, Lautstärke, Track-Ausschnitt und Timeline
+- `image-properties.png`: Transformation, Zuschnitt und Farbkorrektur
+- `text-properties.png`: Datenfeldverknüpfung, Schrift und Textdarstellung
+- `export-format.png`: Auswahl des Seitenverhältnisses
 - `export-resolution.png`: Auswahl der Videoauflösung
-- `export-quality.png`: Auswahl der Exportqualität
+- `export-review.png`: abschließende Zusammenfassung vor dem Export
 - `content-bulk-creator-logo.svg`: Logo und Favicon
 
 Ein Klick auf einen Screenshot öffnet eine größere Vorschau. Die Vorschau lässt sich über die Schließen-Schaltfläche, einen Klick auf den Hintergrund oder mit `Escape` schließen.
@@ -70,9 +79,9 @@ Neue Dateien im Asset-Ordner müssen in der Homepage verwendet werden. Der Test 
 
 Die Seite ist für Desktop, Tablet und Smartphone ausgelegt.
 
-- Desktop: zweispaltiger Hero, horizontale Produktionsspur und dreispaltige Funktionsübersicht
-- Tablet: einspaltiger Hero und zweispaltige Funktionskarten
-- Smartphone: lineare Inhaltsfolge, zweispaltige Prozessschritte und einspaltige Karten
+- Desktop: zweispaltiger Hero, kompakter Ablauf und abwechselnde Detailkapitel
+- Tablet: einspaltiger Hero, verkürzte Bildflächen und flexible Eigenschaften
+- Smartphone: lineare Inhaltsfolge mit paarweise angeordneten Detailbildern
 
 Die Navigation wird auf kleinen Bildschirmen reduziert. Alle Bedienelemente besitzen sichtbare Tastaturfokusse. Für `prefers-reduced-motion` werden Übergänge abgeschaltet.
 

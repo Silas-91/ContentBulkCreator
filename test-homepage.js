@@ -9,12 +9,18 @@ const html = fs.readFileSync(htmlPath, "utf8");
 
 const requiredFiles = [
   "assets/editor-overview.png",
-  "assets/editor-start.png",
-  "assets/import-bulk-data.png",
-  "assets/image-editing.png",
-  "assets/music-editing.png",
+  "assets/login.png",
+  "assets/template-upload.png",
+  "assets/template-history.png",
+  "assets/bulk-upload.png",
+  "assets/bulk-grid.png",
+  "assets/music-upload.png",
+  "assets/music-controls.png",
+  "assets/image-properties.png",
+  "assets/text-properties.png",
+  "assets/export-format.png",
   "assets/export-resolution.png",
-  "assets/export-quality.png",
+  "assets/export-review.png",
   "assets/content-bulk-creator-logo.svg",
   "styles.css",
   "homepage.js",
@@ -30,8 +36,10 @@ const requiredText = [
   "Vorlage",
   "Bulk-Daten",
   "Musik",
-  "Eine Idee.",
-  "Eine klare Produktionsstrecke",
+  "Ein Login. Ein klarer Produktionsweg.",
+  "Der Workflow im Detail",
+  "Eigenschaften",
+  "Export prüfen",
   "Impressum",
   "data-modal-open=\"imprint-modal\"",
   "data-preview-src=\"./assets/editor-overview.png\"",
@@ -39,6 +47,8 @@ const requiredText = [
   "Projekt unterstützen",
   "https://www.buymeacoffee.com/silassmithi",
   "href=\"#workflow\"",
+  "href=\"#ueberblick\"",
+  "href=\"#eigenschaften\"",
 ];
 
 const failures = [];
@@ -90,7 +100,7 @@ if (!fs.existsSync(cssPath)) {
   failures.push("styles.css fehlt");
 } else {
   const css = fs.readFileSync(cssPath, "utf8");
-  for (const token of ["--violet", "--magenta", ".hero", ".production-track", ".feature-grid", ".export-section"]) {
+  for (const token of ["--violet", "--magenta", ".hero", ".journey", ".process-chapter", ".property-grid", ".export-section"]) {
     if (!css.includes(token)) {
       failures.push(`CSS-Merkmal fehlt: ${token}`);
     }
