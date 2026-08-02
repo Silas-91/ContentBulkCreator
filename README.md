@@ -40,6 +40,8 @@ Die Gestaltung verbindet die klare Ordnung der aktuellen Version mit der weicher
 
 Die wichtigsten Designwerte sind als CSS-Variablen am Anfang von `styles.css` definiert.
 
+Die Schrittmarken „01 / Vorlage“, „02 / Bulk-Daten“ und „03 / Musik“ sind deutlich hervorgehoben. Detailbilder in Eigenschaften, Export und Hilfe bleiben kompakt und können für eine größere Ansicht angeklickt werden.
+
 ## Dateien
 
 ```text
@@ -48,6 +50,8 @@ homepage/
 ├── assets/                   # Logo und verwendete Produkt-Screenshots
 ├── homepage.js               # Bildvorschau und Dialoge
 ├── index.html                # Inhalte und semantischer Seitenaufbau
+├── robots.txt                # Suchmaschinenfreigabe und Sitemap-Verweis
+├── sitemap.xml               # öffentliche Homepage-URL
 ├── styles.css                # Gestaltung und responsive Breakpoints
 ├── test-homepage.js          # Prüfung von Dateien, Links und Inhalten
 ├── package.json              # lokale und automatische Tests
@@ -81,6 +85,19 @@ Es werden ausschließlich Bilder aus `homepage/assets/` verwendet:
 Ein Klick auf einen Screenshot öffnet eine größere Vorschau. Die Vorschau lässt sich über die Schließen-Schaltfläche, einen Klick auf den Hintergrund oder mit `Escape` schließen.
 
 Neue Dateien im Asset-Ordner müssen in der Homepage verwendet werden. Der Test meldet ungenutzte oder fehlende Bilder.
+
+## Suchmaschinenoptimierung
+
+Die Homepage enthält eine technische SEO-Grundlage:
+
+- präziser Seitentitel und Beschreibung für Suchergebnisse
+- Canonical-URL der öffentlichen GitHub-Pages-Seite
+- Open-Graph- und Twitter-Metadaten für geteilte Links
+- strukturierte Daten für Website und Webanwendung
+- `robots.txt` und `sitemap.xml` für die Indexierung
+- semantische Überschriften, verständliche Linktexte und beschreibende Alternativtexte
+
+Die öffentliche Basis-URL lautet `https://silas-91.github.io/ContentBulkCreator/`. Bei einem späteren Wechsel auf eine eigene Domain müssen Canonical-URL, Social-Media-Metadaten, strukturierte Daten, Sitemap und Robots-Verweis gemeinsam angepasst werden.
 
 ## Responsive Verhalten
 
@@ -125,6 +142,7 @@ Dabei werden geprüft:
 - unerwünschte Verweise auf die private Anwendung
 - JavaScript-Syntax
 - gültige HTML-Struktur und Barrierefreiheitsregeln
+- Canonical-URL, strukturierte Daten, Sitemap und Robots-Verweis
 
 ## Veröffentlichung und Synchronisation
 

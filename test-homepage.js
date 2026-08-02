@@ -32,6 +32,8 @@ const requiredFiles = [
   "package.json",
   "package-lock.json",
   "README.md",
+  "robots.txt",
+  "sitemap.xml",
   ".github/workflows/ci.yml",
 ];
 
@@ -63,9 +65,14 @@ const requiredText = [
   "href=\"#ueberblick\"",
   "href=\"#eigenschaften\"",
   "href=\"#hilfe\"",
+  "rel=\"canonical\" href=\"https://silas-91.github.io/ContentBulkCreator/\"",
+  "property=\"og:title\"",
+  "name=\"twitter:card\"",
+  "application/ld+json",
 ];
 
 const failures = [];
+const publicHomepageUrl = "https://silas-91.github.io/ContentBulkCreator/";
 
 for (const file of requiredFiles) {
   if (!fs.existsSync(path.join(root, file))) {
@@ -103,6 +110,26 @@ const assetFiles = fs.readdirSync(path.join(root, "assets")).map((file) => `asse
 for (const asset of assetFiles) {
   if (!referencedAssets.has(asset)) {
     failures.push(`Ungenutzte Homepage-Datei gefunden: ${asset}`);
+  }
+}
+
+const robots = fs.readFileSync(path.join(root, "robots.txt"), "utf8");
+const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
+if (!robots.includes(`${publicHomepageUrl}sitemap.xml`)) {
+  failures.push("robots.txt verweist nicht auf die öffentliche Sitemap.");
+}
+if (!sitemap.includes(`<loc>${publicHomepageUrl}</loc>`)) {
+  failures.push("sitemap.xml enthält nicht die öffentliche Homepage-URL.");
+}
+
+const structuredDataMatch = html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+if (!structuredDataMatch) {
+  failures.push("Strukturierte SEO-Daten fehlen.");
+} else {
+  try {
+    JSON.parse(structuredDataMatch[1]);
+  } catch {
+    failures.push("Strukturierte SEO-Daten sind kein gültiges JSON.");
   }
 }
 
